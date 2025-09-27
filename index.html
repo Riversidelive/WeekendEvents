@@ -1,96 +1,146 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title> 🎉Windsor Weekend Events —— Sept 12–14, 2025</title>
-<style>
-  :root{--brand:#003366;--accent:#0b84ff;--river:#00b3a4;--bg:#f6f7fb;--ink:#222}
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
-  header,footer{background:var(--brand);color:#fff;text-align:center;padding:20px}
-  main{max-width:1000px;margin:auto;background:#fff;padding:20px}
-  h2{color:var(--brand);border-bottom:2px solid #e9eef5;padding-bottom:6px;margin-top:28px}
-  .date{font-size:1.6rem;color:var(--accent);font-weight:800;margin:6px 0 0}
-  .event{margin:14px 0;padding:12px 16px;border-left:5px solid var(--accent);background:#fafafa}
-  .riverfront{border-left-color:var(--river)}
-  a{color:#065ec2;text-decoration:none}
-  a:hover{text-decoration:underline}
-  .tag{display:inline-block;background:var(--brand);color:#fff;font-size:.72rem;padding:2px 6px;border-radius:4px;margin-left:6px}
-  .note{font-size:.92rem;color:#666;margin:6px 0 12px}
-</style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Windsor Weekend Events — Aug 29–31, 2025</title>
+  <style>
+    :root{--brand:#003366;--accent:#0b84ff;--river:#00b3a4;--bg:#f6f7fb;--ink:#222;--featured:#ffe8a3}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+    header,footer{background:var(--brand);color:#fff;text-align:center;padding:20px}
+    main{max-width:1000px;margin:auto;background:#fff;padding:20px}
+    h2{color:var(--brand);border-bottom:2px solid #e9eef5;padding-bottom:6px;margin-top:28px}
+    .date{font-size:1.6rem;color:var(--accent);font-weight:800;margin:6px 0 0}
+    .event{margin:14px 0;padding:12px 16px;border-left:5px solid var(--accent);background:#fafafa}
+    .riverfront{border-left-color:var(--river)}
+    .featured{border-left-color:#f0a500;background:var(--featured)}
+    a{color:#065ec2;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .tag{display:inline-block;background:var(--brand);color:#fff;font-size:.72rem;padding:2px 6px;border-radius:4px;margin-left:6px}
+    .note{font-size:.92rem;color:#666;margin:6px 0 12px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:10px;border:1px solid #e6e6e6;text-align:left}
+  </style>
 </head>
 <body>
 <header>
   <h1>🌟 Windsor Weekend Events</h1>
-  <p class="date">September 12–14, 2025</p>
-  <p>Prioritizing <strong>Downtown Windsor</strong> and the <strong>Detroit River riverfront</strong>. <em>No duplicates — each event appears once.</em></p>
+  <p class="date">August 29–31, 2025</p>
+  <p>Prioritizing <strong>Downtown Windsor</strong> and the <strong>Detroit River riverfront</strong>.</p>
 </header>
 
 <main>
 
-  <!-- Major events / headliners (only appear here) -->
-  <section>
-    <h2>🔥 Major Events This Weekend</h2>
-
-    <div class="event riverfront">
-      <strong><a href="https://raceroster.com/events/2025/90543/windsor-waterfront-half-marathon-and-5km" target="_blank" rel="noopener">Windsor Waterfront Half Marathon + 5K</a></strong>
-      <span class="tag">Riverfront • Sun</span><br/>
-      📍 Riverside Dr. E (Start: Caesars Windsor) • 🗓️ Sun, Sept 14 • Kids Dash 6:45 AM • 5K 7:00 AM • Half 8:15 AM.
-    </div>
-
-    <div class="event">
-      <strong><a href="https://www.visitwindsoressex.com/event/childrens-fest/2025-09-13/" target="_blank" rel="noopener">Children’s Fest</a></strong>
-      <span class="tag">Family • Sat–Sun</span><br/>
-      📍 Central Park Athletics • 🗓️ Sept 13–14 • ⏰ 10 AM–5 PM • $5 (under 2 free).
-    </div>
-
-    <div class="event">
-      <strong><a href="https://www.visitwindsoressex.com/event/caboto-club-grape-fest/" target="_blank" rel="noopener">Caboto Club Grape Fest</a></strong>
-      <span class="tag">Food &amp; Music • Fri–Sun</span><br/>
-      📍 Giovanni Caboto Club • 🗓️ Sept 12–14 • Italian food, live music, grape‑stomping.
-    </div>
-
-    <div class="event">
-      <strong><a href="https://www.visitwindsoressex.com/event/next-to-normal-a-musical-production-2/" target="_blank" rel="noopener">Next to Normal — Musical Production</a></strong>
-      <span class="tag">Theatre • Fri–Sun</span><br/>
-      📍 Cardinal Music, Windsor • 🗓️ Sept 12–14 • Weekend run of award‑winning musical.
-    </div>
-  </section>
-
-  <!-- Downtown & Riverfront (excludes all "Major Events" to avoid duplicates) -->
+  <!-- Riverfront & Downtown -->
   <section>
     <h2>🌊 Detroit River Riverfront & Downtown</h2>
 
-    <div class="event">
-      <strong><a href="https://www.visitwindsoressex.com/event/downtown-windsor-farmers-market/2025-09-13/" target="_blank" rel="noopener">Downtown Windsor Farmers’ Market</a></strong>
-      <span class="tag">Pelissier &amp; Maiden Lane • Sat</span><br/>
-      📍 Downtown (Pelissier St) • 🗓️ Sat, Sept 13 • ⏰ 9 AM–2 PM • Produce, food, artisans, live music.
+    <!-- ⭐ FEATURED / BLOCK-PARTY STYLE -->
+    <div class="event featured">
+      <strong><a href="https://www.windsoreats.com/2025/08/a-free-beats-vintage-festival-is-taking-over-windsoreats-this-weekend/" target="_blank" rel="noopener">Beats & Vintage — WindsorEats Takeover (Block-Party Vibes)</a></strong>
+      <span class="tag">Walkerville • Free entry</span><br/>
+      📍 WindsorEats Food Hall, 400 Erie St E • 🗓️ Sat, Aug 30 • ⏰ 3–10 PM • DJs, vintage vendors & patio party energy.
+    </div>
+
+    <div class="event riverfront">
+      <strong><a href="https://citywindsor.ca/residents/culture/enbridge-presents-live-at-the-square" target="_blank" rel="noopener">Live at The Square — Leighton Bain (Free)</a></strong>
+      <span class="tag">City Hall Square</span><br/>
+      📍 350 City Hall Sq W • 🗓️ Fri, Aug 29 • ⏰ 7–9 PM • Free outdoor concert.
     </div>
 
     <div class="event">
-      <strong><a href="https://www.visitwindsoressex.com/event/city-square-concerts-coffeehouse-combo/" target="_blank" rel="noopener">Live at The Square — Coffeehouse Combo</a></strong>
-      <span class="tag">Downtown • Fri</span><br/>
-      📍 City Hall Square • 🗓️ Fri, Sept 12 • ⏰ 7–9 PM • Outdoor live jazz set.
+      <strong><a href="https://www.walkervillebrewery.com/events/august-wddnm-2025" target="_blank" rel="noopener">Walkerville Distillery District Night Market</a></strong>
+      <span class="tag">Walkerville • Night market</span><br/>
+      📍 Argyle Rd & Brant • 🗓️ Fri, Aug 29 • ⏰ 5–11 PM • Vendors, food, live music.
+    </div>
+
+    <div class="event">
+      <strong><a href="https://www.visitwindsoressex.com/event/downtown-windsor-farmers-market/2025-08-30/" target="_blank" rel="noopener">Downtown Windsor Farmers’ Market</a></strong>
+      <span class="tag">Pelissier & Maiden Lane • Free</span><br/>
+      📍 Pelissier St • 🗓️ Sat, Aug 30 • ⏰ 9 AM–2 PM • Produce, artisan goods, live music.
+    </div>
+
+    <div class="event">
+      <strong><a href="https://www.ticketmaster.ca/theresa-caputo-live-the-experience-windsor-ontario-08-30-2025/event/100062B4EB90418C" target="_blank" rel="noopener">Theresa Caputo Live: The Experience</a></strong>
+      <span class="tag">Caesars Windsor • Ticketed</span><br/>
+      📍 The Colosseum • 🗓️ Sat, Aug 30 • ⏰ 8 PM.
     </div>
   </section>
 
-  <!-- Around the region (no duplicates with Major Events) -->
+  <!-- Festivals -->
   <section>
-    <h2>🎪 Around the Region</h2>
+    <h2>🎪 Major Festivals & Community</h2>
 
     <div class="event">
-      <strong><a href="https://events.leamington.ca/default/Detail/2025-09-12-1700-MILL-ST-MARKET" target="_blank" rel="noopener">Mill St. Market — 1980’s Glow Party (Finale)</a></strong>
-      <span class="tag">Leamington • Fri</span><br/>
-      📍 Mill St. West • 🗓️ Fri, Sept 12 • ⏰ 5–10 PM • Night market with food, vendors &amp; music theme.
+      <strong><a href="https://www.harrowfair.com/" target="_blank" rel="noopener">Harrow Fair</a></strong>
+      <span class="tag">Harrow • Fair</span><br/>
+      📍 Harrow Fairgrounds • 🗓️ Thu–Sun, Aug 28–31 • Midway, livestock, shows & exhibits.
+    </div>
+
+    <div class="event">
+      <strong><a href="https://www.yourlocalribfest.ca/lasalle" target="_blank" rel="noopener">LaSalle Ribfest (Free Entry)</a></strong>
+      <span class="tag">LaSalle • Food & Music</span><br/>
+      📍 LaSalle Landing Event Centre • 🗓️ Fri–Sun, Aug 29–31 • Ribs, vendors, entertainment.
+    </div>
+
+    <div class="event">
+      <strong><a href="https://visitamherstburg.ca/events/amherstburg-open-air-weekends/" target="_blank" rel="noopener">Amherstburg Open Air Weekends</a></strong>
+      <span class="tag">Amherstburg • Free</span><br/>
+      📍 Downtown Amherstburg • 🗓️ Fri–Sun, Aug 29–31 • Pedestrian streets, patios, performers.
     </div>
   </section>
 
-  <p class="note">Times/venues may change; check event pages before you go.</p>
+  <!-- Small & local -->
+  <section>
+    <h2>🧭 Local Gems & Small Events</h2>
+
+    <div class="event">
+      <strong><a href="https://whatshappeningwindsor.ca/posts/2025-08-27" target="_blank" rel="noopener">White Party — Windsor Premier Cruises</a></strong>
+      <span class="tag">On the river • Ticketed</span><br/>
+      📍 Boarding Downtown • 🗓️ Sat, Aug 30 • ⏰ 7–11 PM • Theme cruise with DJs & dancing on the water.
+    </div>
+
+    <div class="event">
+      <strong><a href="https://windsorite.ca/2025/08/theresa-caputo-returns-to-the-colosseum-stage/" target="_blank" rel="noopener">Weekend Roundup Picks</a></strong>
+      <span class="tag">Guide</span><br/>
+      A curated list of smaller shows, comedy, and pop-ups for Aug 29–31 (check times).
+    </div>
+  </section>
+
+  <!-- Across the river -->
+  <section>
+    <h2>🌉 Nearby in Detroit (passport/Enhanced ID required)</h2>
+
+    <div class="event">
+      <strong><a href="https://www.detroitjazzfest.org/main-festival/detroit-jazz-festival-2025-program-schedule/" target="_blank" rel="noopener">Detroit Jazz Festival (Free)</a></strong>
+      <span class="tag">Hart Plaza & Campus Martius</span><br/>
+      📍 Downtown Detroit • 🗓️ Fri–Mon, Aug 29–Sept 1 • Full multi-stage jazz lineup.
+    </div>
+  </section>
+
+  <!-- At-a-Glance -->
+  <section>
+    <h2>📅 At-a-Glance</h2>
+    <table>
+      <thead><tr><th>When</th><th>Event</th><th>Where</th></tr></thead>
+      <tbody>
+        <tr><td>Fri, Aug 29 • 7–9 PM</td><td><a href="https://citywindsor.ca/residents/culture/enbridge-presents-live-at-the-square" target="_blank" rel="noopener">Live at The Square (Free)</a></td><td>City Hall Square, Windsor</td></tr>
+        <tr><td>Fri, Aug 29 • 5–11 PM</td><td><a href="https://www.walkervillebrewery.com/events/august-wddnm-2025" target="_blank" rel="noopener">Walkerville Night Market</a></td><td>Walkerville (Argyle/Brant)</td></tr>
+        <tr><td>Sat, Aug 30 • 3–10 PM</td><td><a href="https://www.windsoreats.com/2025/08/a-free-beats-vintage-festival-is-taking-over-windsoreats-this-weekend/" target="_blank" rel="noopener">Beats & Vintage — WindsorEats (Block-Party Vibes)</a></td><td>400 Erie St E</td></tr>
+        <tr><td>Sat, Aug 30 • 9 AM–2 PM</td><td><a href="https://www.visitwindsoressex.com/event/downtown-windsor-farmers-market/2025-08-30/" target="_blank" rel="noopener">Downtown Farmers’ Market</a></td><td>Pelissier & Maiden Lane</td></tr>
+        <tr><td>Sat, Aug 30 • 8 PM</td><td><a href="https://www.ticketmaster.ca/theresa-caputo-live-the-experience-windsor-ontario-08-30-2025/event/100062B4EB90418C" target="_blank" rel="noopener">Theresa Caputo Live</a></td><td>Caesars Windsor — Colosseum</td></tr>
+        <tr><td>Fri–Sun</td><td><a href="https://www.harrowfair.com/" target="_blank" rel="noopener">Harrow Fair</a></td><td>Harrow Fairgrounds</td></tr>
+        <tr><td>Fri–Sun</td><td><a href="https://www.yourlocalribfest.ca/lasalle" target="_blank" rel="noopener">LaSalle Ribfest</a></td><td>LaSalle Landing</td></tr>
+        <tr><td>Fri–Sun</td><td><a href="https://visitamherstburg.ca/events/amherstburg-open-air-weekends/" target="_blank" rel="noopener">Amherstburg Open Air</a></td><td>Downtown Amherstburg</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Times/venues can change for weather or programming. Check the event link before you go.</p>
+  </section>
 
 </main>
 
 <footer>
-  <p>© 2025 Windsor Events Guide • Updated September 12, 2025</p>
+  <p>© 2025 Windsor Events Guide • Updated August 29, 2025</p>
 </footer>
 </body>
 </html>
