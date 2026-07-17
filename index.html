@@ -1,436 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A curated guide to events and festivities happening in Windsor-Essex on July 11–12, 2026." />
-  <meta name="theme-color" content="#0f4c5c" />
-  <title>Windsor Weekend Events | July 11–12, 2026</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Events happening in Windsor, Ontario, July 18–19, 2026.">
+  <meta name="theme-color" content="#123a70">
+  <title>Windsor Weekend Events | July 18–19, 2026</title>
+
   <style>
     :root {
-      --ink: #14213d;
-      --muted: #5f6b76;
-      --paper: #f8fbfc;
-      --card: #ffffff;
-      --brand: #0f4c5c;
-      --accent: #ffb703;
-      --soft: #e7f4f7;
-      --line: #d9e5e8;
-      --shadow: 0 16px 38px rgba(19, 57, 68, 0.12);
-      --radius: 22px;
+      --navy: #123a70;
+      --blue: #1769e0;
+      --blue-dark: #0f4fab;
+      --gold: #f2b84b;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --text: #182238;
+      --muted: #657089;
+      --border: #dce4ef;
+      --warning-bg: #fff5d9;
+      --warning-text: #654c11;
+      --shadow: 0 14px 36px rgba(23, 42, 74, 0.10);
+      --radius: 20px;
+      --page-width: 1120px;
     }
 
     * { box-sizing: border-box; }
+
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: linear-gradient(180deg, #eaf7fa 0, var(--paper) 420px);
+      background:
+        radial-gradient(circle at top left, rgba(23,105,224,.12), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.6;
     }
 
     a { color: inherit; }
-    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
 
-    header {
-      padding: 72px 0 44px;
-      position: relative;
-      overflow: hidden;
+    .container {
+      width: min(calc(100% - 32px), var(--page-width));
+      margin: 0 auto;
     }
 
-    header::before,
-    header::after {
-      content: "";
-      position: absolute;
-      border-radius: 999px;
-      filter: blur(4px);
-      opacity: 0.5;
-      pointer-events: none;
-    }
-    header::before { width: 280px; height: 280px; background: #8fd3df; right: -70px; top: -90px; }
-    header::after { width: 180px; height: 180px; background: #ffd166; left: -60px; bottom: -80px; }
+    header { padding: 34px 0 42px; }
 
     .hero {
       position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
-      gap: 36px;
-      align-items: end;
+      overflow: hidden;
+      padding: clamp(32px, 6vw, 64px);
+      border-radius: 30px;
+      color: white;
+      background: linear-gradient(135deg, #0d2c58, #1769e0);
+      box-shadow: var(--shadow);
     }
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      padding: 8px 13px;
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      right: -130px;
+      bottom: -180px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.10);
+    }
+
+    .kicker {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.28);
       border-radius: 999px;
-      background: rgba(255,255,255,0.78);
-      border: 1px solid rgba(15,76,92,0.12);
-      font-size: 0.88rem;
+      background: rgba(255,255,255,.10);
+      font-size: .84rem;
       font-weight: 800;
-      letter-spacing: 0.08em;
+      letter-spacing: .06em;
       text-transform: uppercase;
-      color: var(--brand);
     }
 
     h1 {
-      margin: 20px 0 16px;
-      font-size: clamp(2.6rem, 7vw, 5.7rem);
-      line-height: 0.95;
-      letter-spacing: -0.055em;
-      max-width: 820px;
-    }
-
-    .lead {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
       margin: 0;
-      max-width: 720px;
-      color: var(--muted);
-      font-size: clamp(1.04rem, 2vw, 1.25rem);
+      font-size: clamp(2.35rem, 7vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -.04em;
     }
 
-    .date-card {
-      background: rgba(255,255,255,0.82);
-      border: 1px solid rgba(255,255,255,0.9);
-      backdrop-filter: blur(14px);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 24px;
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: rgba(255,255,255,.88);
+      font-size: 1.08rem;
     }
-    .date-card strong { display: block; font-size: 1.25rem; }
-    .date-card span { color: var(--muted); }
 
-    .toolbar {
+    .hero-actions {
+      position: relative;
+      z-index: 1;
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      margin: 8px 0 28px;
-    }
-    .filter {
-      border: 1px solid var(--line);
-      background: white;
-      color: var(--ink);
-      border-radius: 999px;
-      padding: 10px 16px;
-      font: inherit;
-      font-weight: 750;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-    .filter:hover, .filter.active { background: var(--brand); color: white; border-color: var(--brand); transform: translateY(-1px); }
-
-    main { padding-bottom: 70px; }
-    .section-title { margin: 18px 0 6px; font-size: clamp(1.8rem, 4vw, 2.7rem); letter-spacing: -0.04em; }
-    .section-note { margin: 0 0 28px; color: var(--muted); }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
+      gap: 12px;
+      margin-top: 29px;
     }
 
-    .event-card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(20, 33, 61, 0.07);
-      transition: transform 0.22s ease, box-shadow 0.22s ease;
-      display: flex;
-      flex-direction: column;
-      min-height: 100%;
-    }
-    .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-    .event-card.hidden { display: none; }
-
-    .card-top {
-      min-height: 116px;
-      padding: 23px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 18px;
-      background: linear-gradient(135deg, var(--soft), #ffffff);
-    }
-
-    .icon {
-      width: 54px;
-      height: 54px;
-      display: grid;
-      place-items: center;
-      border-radius: 17px;
-      background: var(--brand);
-      color: white;
-      font-size: 1.55rem;
-      flex: 0 0 auto;
-    }
-    .badge {
-      display: inline-flex;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: #fff3c4;
-      color: #7a5700;
-      font-size: 0.76rem;
-      font-weight: 850;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .card-body { padding: 23px; display: flex; flex-direction: column; flex: 1; }
-    .card-body h2 { margin: 0 0 10px; font-size: 1.42rem; line-height: 1.2; letter-spacing: -0.025em; }
-    .meta { display: grid; gap: 6px; margin: 0 0 14px; color: var(--muted); font-size: 0.95rem; }
-    .description { margin: 0 0 18px; color: #3e4a55; }
-    .details { margin: 0 0 20px; padding-left: 1.15rem; color: #3e4a55; }
-    .details li + li { margin-top: 4px; }
-
-    .actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px; }
     .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      text-decoration: none;
+      min-height: 46px;
+      padding: 0 18px;
       border-radius: 12px;
-      padding: 10px 14px;
+      text-decoration: none;
       font-weight: 800;
-      border: 1px solid var(--brand);
-      background: var(--brand);
+      transition: transform .18s ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button-light {
+      background: white;
+      color: var(--navy);
+    }
+
+    .button-outline {
+      border: 1px solid rgba(255,255,255,.38);
+      background: rgba(255,255,255,.08);
       color: white;
     }
-    .button.secondary { background: white; color: var(--brand); }
 
-    .planner {
-      margin-top: 34px;
-      padding: 28px;
-      border-radius: var(--radius);
-      background: var(--ink);
+    .alert {
+      margin: 0 0 42px;
+      padding: 20px 22px;
+      border: 1px solid #efd58f;
+      border-left: 5px solid var(--gold);
+      border-radius: 16px;
+      background: var(--warning-bg);
+      color: var(--warning-text);
+    }
+
+    .alert strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .section-heading { margin-bottom: 18px; }
+
+    .section-heading h2 {
+      margin: 0 0 7px;
+      font-size: clamp(1.75rem, 4vw, 2.55rem);
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 24px 0 30px;
+    }
+
+    .filter {
+      padding: 10px 15px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .filter:hover,
+    .filter.active {
+      border-color: var(--blue);
+      background: var(--blue);
       color: white;
+    }
+
+    .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0,1fr));
       gap: 22px;
     }
-    .planner h2 { margin-top: 0; }
-    .planner p { color: #d8e2ea; }
-    .plan-item { padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.14); }
-    .plan-item:first-of-type { border-top: 0; padding-top: 0; }
 
-    .notice {
-      margin-top: 24px;
-      padding: 16px 18px;
-      border-radius: 16px;
-      background: #fff8dd;
-      border: 1px solid #f0d98a;
-      color: #654d00;
-      font-size: 0.94rem;
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: 0 8px 26px rgba(24,34,56,.065);
     }
 
-    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 0.92rem; }
-    footer a { color: var(--brand); font-weight: 750; }
+    .card.hidden { display: none; }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eaf1ff;
+      color: #174fb4;
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .045em;
+      text-transform: uppercase;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .card h3 {
+      margin: 17px 0 10px;
+      font-size: 1.38rem;
+      line-height: 1.25;
+    }
+
+    .meta {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 15px;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .card p {
+      margin: 0 0 21px;
+      color: #45516a;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-top: auto;
+    }
+
+    .links a {
+      color: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      color: var(--blue-dark);
+      text-decoration: underline;
+    }
+
+    .schedule {
+      margin-top: 54px;
+      padding: 34px;
+      border-radius: 25px;
+      background: var(--navy);
+      color: white;
+    }
+
+    .schedule h2 {
+      margin: 0 0 20px;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 18px;
+    }
+
+    .schedule-card {
+      padding: 21px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px;
+      background: rgba(255,255,255,.09);
+    }
+
+    .schedule-card h3 { margin: 0 0 7px; }
+
+    .schedule-card p {
+      margin: 0;
+      color: rgba(255,255,255,.82);
+    }
+
+    .sources {
+      margin-top: 42px;
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+
+    .sources h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    .sources a {
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 58px;
+      padding: 30px 0 42px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      font-size: .92rem;
+    }
 
     @media (max-width: 760px) {
-      header { padding-top: 44px; }
-      .hero, .grid, .planner { grid-template-columns: 1fr; }
-      .date-card { max-width: 420px; }
-      .card-top { min-height: auto; }
-    }
+      .grid,
+      .schedule-grid { grid-template-columns: 1fr; }
 
-    @media (prefers-reduced-motion: reduce) {
-      * { scroll-behavior: auto !important; transition: none !important; }
+      .hero { border-radius: 22px; }
+
+      .card-top { display: block; }
+
+      .date {
+        display: block;
+        margin-top: 9px;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="wrap hero">
-      <div>
-        <div class="eyebrow">📍 Windsor–Essex, Ontario</div>
-        <red></red><h1>Events this weekend in Windsor</h1><red></red>
-        <p class="lead">A curated guide to music, movies, markets, fandom, and family-friendly fun across Windsor and nearby LaSalle.</p>
-      </div>
-      <aside class="date-card" aria-label="Weekend dates">
-        <strong>July 11–12, 2026</strong>
-        <span>Saturday and Sunday</span>
-      </aside>
+    <div class="container">
+      <section class="hero">
+        <span class="kicker">Windsor, Ontario, Canada</span>
+        <h1>This weekend in Windsor</h1>
+        <p class="hero-copy">
+          Events happening Saturday, July 18 and Sunday, July 19, 2026,
+          with direct links to information and maps.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#events">See the events</a>
+          <a class="button button-outline" href="#plan">Weekend plan</a>
+        </div>
+      </section>
     </div>
   </header>
 
-  <main class="wrap">
-    <h2 class="section-title">Weekend picks</h2>
-    <p class="section-note">Use the filters to quickly find free, family-friendly, indoor, or outdoor events.</p>
+  <main class="container">
+    <aside class="alert">
+      <strong>Air-quality notice</strong>
+      Windsor-Essex has experienced wildfire smoke and event cancellations this
+      week. Check the organizer's latest update before travelling to any outdoor event.
+    </aside>
 
-    <div class="toolbar" aria-label="Filter events">
-      <button class="filter active" data-filter="all">All events</button>
-      <button class="filter" data-filter="free">Free</button>
-      <button class="filter" data-filter="family">Family</button>
-      <button class="filter" data-filter="outdoor">Outdoor</button>
-      <button class="filter" data-filter="indoor">Indoor</button>
-    </div>
-
-    <section class="grid" id="events">
-      <article class="event-card" data-tags="free family outdoor music saturday">
-        <div class="card-top">
-          <span class="icon" aria-hidden="true">🎶</span>
-          <span class="badge">Top pick · Free</span>
-        </div>
-        <div class="card-body">
-          <h2>Riverfront Rewind</h2>
-          <div class="meta">
-            <span>📅 Saturday, July 11 · 4:00–9:30 p.m.</span>
-            <span>📍 Reaume Park, 4714 Riverside Drive East</span>
-          </div>
-          <p class="description">A free waterfront celebration with live music, retro entertainment, dancing, lawn games, historical photo opportunities, and local food.</p>
-          <ul class="details">
-            <li>Big Louie and the Band</li>
-            <li>DJ Kim Owens, Velvet Edge Dancers, and a WSO quintet</li>
-            <li>The Legends of Motown finale</li>
-            <li>Free shuttle from WFCU Centre Lot G</li>
-          </ul>
-          <div class="actions">
-            <a class="button" href="https://citywindsor.ca/newsroom/experience-windsor-riverfront-summer-series-kicks-off-with-riverfront-rewind" target="_blank" rel="noopener">Official details ↗</a>
-            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Reaume+Park+Windsor+Ontario" target="_blank" rel="noopener">Map</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="event-card" data-tags="free family indoor movie saturday">
-        <div class="card-top">
-          <span class="icon" aria-hidden="true">🎬</span>
-          <span class="badge">Free movie</span>
-        </div>
-        <div class="card-body">
-          <h2>City Cinema Saturdays: <em>Shrek</em></h2>
-          <div class="meta">
-            <span>📅 Saturday, July 11 · 11:00 a.m.–2:00 p.m.</span>
-            <span>📍 SoCA Armouries, 37 University Avenue East</span>
-          </div>
-          <p class="description">A free family-friendly movie screening presented with the Windsor International Film Festival. Free popcorn is included.</p>
-          <div class="actions">
-            <a class="button" href="https://www.visitwindsoressex.com/event/city-cinema-saturdays-3/" target="_blank" rel="noopener">Event page ↗</a>
-            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=37+University+Ave+E+Windsor+Ontario" target="_blank" rel="noopener">Map</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="event-card" data-tags="free family outdoor market saturday">
-        <div class="card-top">
-          <span class="icon" aria-hidden="true">🧺</span>
-          <span class="badge">Downtown</span>
-        </div>
-        <div class="card-body">
-          <h2>Downtown Windsor Farmers’ Market</h2>
-          <div class="meta">
-            <span>📅 Saturday, July 11 · 9:00 a.m.–2:00 p.m.</span>
-            <span>📍 Pelissier Street, between Wyandotte and Park</span>
-          </div>
-          <p class="description">Shop for local produce, artisan foods, baked goods, crafts, and more. The market also features family activities, demonstrations, entertainment, and community booths.</p>
-          <div class="actions">
-            <a class="button" href="https://www.downtownwindsor.ca/farmers-market/" target="_blank" rel="noopener">Market details ↗</a>
-            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Pelissier+Street+Wyandotte+Windsor+Ontario" target="_blank" rel="noopener">Map</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="event-card" data-tags="family indoor outdoor saturday sunday ticketed">
-        <div class="card-top">
-          <span class="icon" aria-hidden="true">🦸</span>
-          <span class="badge">Two-day event</span>
-        </div>
-        <div class="card-body">
-          <h2>Windsor-Essex FanCon</h2>
-          <div class="meta">
-            <span>📅 Saturday–Sunday, July 11–12</span>
-            <span>📍 Event Centre at LaSalle Landing, 970 Front Road</span>
-          </div>
-          <p class="description">A celebration of comics, anime, gaming, cosplay, collectibles, creators, and pop culture, with family-friendly activities and competitions.</p>
-          <ul class="details">
-            <li>Cosplay competitions</li>
-            <li>Gaming and collectibles</li>
-            <li>Artists, creators, speakers, and vendors</li>
-            <li>Children’s crafts, face painting, and soft play</li>
-          </ul>
-          <div class="actions">
-            <a class="button" href="https://www.visitwindsoressex.com/event/windsor-essex-fancon-summer-2026/" target="_blank" rel="noopener">Event page ↗</a>
-            <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Event+Centre+at+LaSalle+Landing+Ontario" target="_blank" rel="noopener">Map</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="event-card" data-tags="outdoor music festival saturday sunday ticketed">
-        <div class="card-top">
-          <span class="icon" aria-hidden="true">🌿</span>
-          <span class="badge">Festival</span>
-        </div>
-        <div class="card-body">
-          <h2>Mystic Garden Music Festival</h2>
-          <div class="meta">
-            <span>📅 Saturday–Sunday, July 11–12</span>
-            <span>📍 Windsor-Essex area — confirm venue and schedule before travelling</span>
-          </div>
-          <p class="description">A two-day summer music festival listed in the Windsor-Essex Summer Festival Guide. Check the organizer’s latest listing for venue, ticket, and schedule updates.</p>
-          <div class="actions">
-            <a class="button" href="https://windsorfestivalguide.ca/" target="_blank" rel="noopener">Festival guide ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="event-card" data-tags="free family outdoor music saturday sunday">
-        <div class="card-top">
-          <span class="icon" aria-hidden="true">🎻</span>
-          <span class="badge">Summer concerts</span>
-        </div>
-        <div class="card-body">
-          <h2>Windsor Symphony Summer Concerts</h2>
-          <div class="meta">
-            <span>📅 Saturday, July 11 · Windsor</span>
-            <span>📅 Sunday, July 12 · Amherstburg</span>
-          </div>
-          <p class="description">The summer concert series is scheduled for Reaume Park on Saturday and King’s Navy Yard Park in Amherstburg on Sunday. Check the official guide for current performance times.</p>
-          <div class="actions">
-            <a class="button" href="https://www.visitwindsoressex.com/wp-content/uploads/2026/04/SummerEventGuide20261.pdf" target="_blank" rel="noopener">Summer event guide ↗</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="planner">
-      <div>
-        <h2>A simple Saturday plan</h2>
-        <div class="plan-item"><strong>Morning:</strong> Browse the Downtown Windsor Farmers’ Market.</div>
-        <div class="plan-item"><strong>Late morning:</strong> See <em>Shrek</em> at the Armouries.</div>
-        <div class="plan-item"><strong>Evening:</strong> Take the free shuttle to Riverfront Rewind at Reaume Park.</div>
+    <section id="events">
+      <div class="section-heading">
+        <h2>Featured events</h2>
+        <p>Use the buttons to filter the events by category.</p>
       </div>
-      <div>
-        <h2>For Sunday</h2>
-        <p>Choose FanCon in LaSalle, a summer symphony concert in Amherstburg, or check the Mystic Garden organizer’s latest schedule before heading out.</p>
-        <p><strong>Tip:</strong> Bring water, sunscreen, and a lawn chair for outdoor events.</p>
+
+      <div class="filters" aria-label="Filter events">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="festival">Festival</button>
+        <button class="filter" data-filter="family">Family</button>
+        <button class="filter" data-filter="market">Market</button>
+        <button class="filter" data-filter="entertainment">Entertainment</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-category="festival market family">
+          <div class="card-top">
+            <span class="tag">Art & Street Festival</span>
+            <span class="date">Saturday</span>
+          </div>
+          <h3>Walkerville Art Walk</h3>
+          <div class="meta">
+            <span><strong>Time:</strong> 11:00 a.m.–10:00 p.m.</span>
+            <span><strong>Location:</strong> Wyandotte Street East, Lincoln Road to Devonshire Road</span>
+          </div>
+          <p>
+            Browse local artists, craft vendors, independent businesses and live
+            music throughout the Walkerville neighbourhood.
+          </p>
+          <div class="links">
+            <a href="https://www.visitwindsoressex.com/event/walkerville-art-walk/" target="_blank" rel="noopener noreferrer">Event details</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Wyandotte+Street+East+Lincoln+Road+Walkerville+Windsor+Ontario" target="_blank" rel="noopener noreferrer">Open map</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="family market">
+          <div class="card-top">
+            <span class="tag">Pet Event</span>
+            <span class="date">Saturday</span>
+          </div>
+          <h3>Dog Days of Summer</h3>
+          <div class="meta">
+            <span><strong>Time:</strong> 9:00 a.m.–2:00 p.m.</span>
+            <span><strong>Location:</strong> Pelissier Street and Park Street</span>
+          </div>
+          <p>
+            A downtown pet-focused community event. Confirm the outdoor-event
+            status before attending.
+          </p>
+          <div class="links">
+            <a href="https://www.downtownwindsor.ca/event/dog-days-of-summer/" target="_blank" rel="noopener noreferrer">Event details</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Pelissier+Street+and+Park+Street+Windsor+Ontario" target="_blank" rel="noopener noreferrer">Open map</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="family entertainment">
+          <div class="card-top">
+            <span class="tag">Free Movie</span>
+            <span class="date">Saturday</span>
+          </div>
+          <h3>City Cinema Saturdays</h3>
+          <div class="meta">
+            <span><strong>Time:</strong> 11:00 a.m.–2:00 p.m.</span>
+            <span><strong>Location:</strong> Performance Hall, SoCA Armouries</span>
+          </div>
+          <p>
+            A free family-friendly movie presented with the Windsor International
+            Film Festival, including complimentary popcorn.
+          </p>
+          <div class="links">
+            <a href="https://www.visitwindsoressex.com/event/city-cinema-saturdays-4/" target="_blank" rel="noopener noreferrer">Event details</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=37+University+Avenue+East+Windsor+Ontario" target="_blank" rel="noopener noreferrer">Open map</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="entertainment">
+          <div class="card-top">
+            <span class="tag">Comedy</span>
+            <span class="date">Saturday</span>
+          </div>
+          <h3>Standup at Sidelines</h3>
+          <div class="meta">
+            <span><strong>Time:</strong> 8:00–9:30 p.m.</span>
+            <span><strong>Admission:</strong> Approximately $10–$15</span>
+          </div>
+          <p>
+            A comedy lineup featuring performers from Windsor, Detroit, Toronto
+            and Ohio. Check the event page for venue and ticket details.
+          </p>
+          <div class="links">
+            <a href="https://www.visitwindsoressex.com/event/standup-at-sidelines/" target="_blank" rel="noopener noreferrer">Event details</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="market family">
+          <div class="card-top">
+            <span class="tag">Regional Market</span>
+            <span class="date">Saturday</span>
+          </div>
+          <h3>Lakeside Market</h3>
+          <div class="meta">
+            <span><strong>Time:</strong> 8:00 a.m.–1:00 p.m.</span>
+            <span><strong>Location:</strong> Atlas Tube Centre, Belle River</span>
+          </div>
+          <p>
+            A nearby Windsor-Essex market with farmers, artisans, food vendors,
+            local businesses and family-friendly activities.
+          </p>
+          <div class="links">
+            <a href="https://www.visitwindsoressex.com/event/lakeside-market/2026-07-18/" target="_blank" rel="noopener noreferrer">Event details</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Atlas+Tube+Centre+Belle+River+Ontario" target="_blank" rel="noopener noreferrer">Open map</a>
+          </div>
+        </article>
+
+        <article class="card" data-category="market family">
+          <div class="card-top">
+            <span class="tag">Sunday Market</span>
+            <span class="date">Sunday</span>
+          </div>
+          <h3>Tecumseh Farmers Market</h3>
+          <div class="meta">
+            <span><strong>Time:</strong> 9:00 a.m.–1:00 p.m.</span>
+            <span><strong>Location:</strong> Tecumseh, Ontario</span>
+          </div>
+          <p>
+            A nearby Sunday option with local produce, food and vendors.
+            Verify the latest air-quality and event-status update before leaving.
+          </p>
+          <div class="links">
+            <a href="https://www.visitwindsoressex.com/events/" target="_blank" rel="noopener noreferrer">Regional event calendar</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Tecumseh+Farmers+Market+Ontario" target="_blank" rel="noopener noreferrer">Open map</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <div class="notice">
-      Event times, locations, admission details, and weather plans can change. Always check the linked organizer page before travelling.
-    </div>
+    <section class="schedule" id="plan">
+      <h2>A simple weekend plan</h2>
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <h3>Saturday</h3>
+          <p>
+            Start with Dog Days of Summer, attend City Cinema, spend the afternoon
+            at Walkerville Art Walk, and finish with the comedy show.
+          </p>
+        </div>
+        <div class="schedule-card">
+          <h3>Sunday</h3>
+          <p>
+            Visit the Tecumseh Farmers Market, then choose an indoor activity or
+            a short waterfront outing based on the latest air quality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sources">
+      <h2>Official event calendars</h2>
+      <ul>
+        <li><a href="https://www.visitwindsoressex.com/events/" target="_blank" rel="noopener noreferrer">Tourism Windsor Essex Pelee Island</a></li>
+        <li><a href="https://www.downtownwindsor.ca/events/month/" target="_blank" rel="noopener noreferrer">Downtown Windsor event calendar</a></li>
+        <li><a href="https://www.citywindsor.ca/" target="_blank" rel="noopener noreferrer">City of Windsor updates</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      Curated for Windsor-Essex visitors and residents. Last updated July 11, 2026. Sources include the City of Windsor, Tourism Windsor Essex Pelee Island, Downtown Windsor BIA, and the Windsor-Essex Summer Festival Guide.
+    <div class="container">
+      Windsor Weekend Events · Updated for July 18–19, 2026
     </div>
   </footer>
 
   <script>
-    const buttons = document.querySelectorAll('.filter');
-    const cards = document.querySelectorAll('.event-card');
+    const filters = document.querySelectorAll(".filter");
+    const cards = document.querySelectorAll(".card");
 
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        const filter = button.dataset.filter;
+    filters.forEach((button) => {
+      button.addEventListener("click", () => {
+        filters.forEach((item) => item.classList.remove("active"));
+        button.classList.add("active");
 
-        cards.forEach(card => {
-          const tags = card.dataset.tags || '';
-          card.classList.toggle('hidden', filter !== 'all' && !tags.includes(filter));
+        const selected = button.dataset.filter;
+
+        cards.forEach((card) => {
+          const categories = card.dataset.category.split(" ");
+          const visible = selected === "all" || categories.includes(selected);
+          card.classList.toggle("hidden", !visible);
         });
       });
     });
